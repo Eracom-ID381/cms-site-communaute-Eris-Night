@@ -2,10 +2,8 @@
 @import "_includes/variables.scss";
 @import "_includes/mixins.scss";
 @font-face {
-	font-family: 'we are alien';
-	src: url("wearealien-wefont.woff") format('woff');
-	font-weight: normal;
-	font-style: normal;
+	font-family: 'alien';
+	src: url("../source/we-are-alien/wearealien.ttf");
 }
 
 body {
@@ -15,10 +13,13 @@ body {
 	padding: 3.5% 5%;
 	margin-right: auto;
 	margin-left: auto;
-	font-family: "we are alien", Helvetica, Arial, sans-serif;
+	font-family: "alien", sans-serif;
+	font-size: 1.3rem;
 }
 
-h1 {}
+h1 {
+	font-weight: bold;
+}
 
 img {}
 
@@ -29,13 +30,9 @@ section {
 		grid-template-columns: 1fr 2fr;
 		padding: 2.5%;
 
-		.col-left {
-			background: darkred;
-		}
+		.col-left {}
 
-		.col-right {
-			background: blueviolet;
-		}
+		.col-right {}
 	}
 
 	&.two-col {
@@ -73,10 +70,10 @@ section {
 }
 
 .container-header {
-	padding: 2.5% 5%;
+	padding: 1% 5%;
 	margin-right: auto;
 	margin-left: auto;
-	margin-bottom: 3rem;
+	margin-bottom: 8rem;
 	height: 48rem;
 	background-color: white;
 }
@@ -85,4 +82,5 @@ section {
 
 .titre {
 	text-align: center;
+	font-size: 4rem;
 }
