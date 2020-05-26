@@ -1,7 +1,3 @@
-function setup() {
-    createCanvas(windowWidth, windowHeight);
-}
-
-function draw() {
-
-}
+var player = document.querySelector('#audioPlayer');
+player.play();
+player.volume = 0.2;
