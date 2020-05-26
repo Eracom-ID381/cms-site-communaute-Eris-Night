@@ -1,41 +1,64 @@
 @import "_includes/reset.scss";
 @import "_includes/variables.scss";
 @import "_includes/mixins.scss";
-
-header {
-    background: rgba(252, 62, 158);
-    height: 100px;
-    width: 100%;
+@font-face {
+	font-family: 'we are alien';
+	src: url("wearealien-wefont.woff") format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
-main {
-    background: rgba(255, 255, 255);
-
-    // ON PEUT CALCULER DES CHOSES EN PURE CSS
-    height: calc(100vh - 100px * 2);
-    
-    // GRID SETTINGS
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    grid-gap: 1rem;
+body {
+	background-image: url("../source/img/BG.jpg");
+	background-repeat: repeat;
+	background-size: 50%;
+	padding: 3.5% 5%;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: "we are alien", Helvetica, Arial, sans-serif;
 }
 
-.image-section {
-    padding: 1rem;
-    
+h1 {}
+
+section {
+	display: grid;
+
+	&.two-col {
+		grid-template-columns: 1fr 1fr;
+
+		.col-left {
+			background: darkred;
+		}
+
+		.col-right {
+			background: blueviolet;
+		}
+	}
+
+	&.two-col-revers {
+		grid-template-columns: 1fr 1fr;
+
+		.col-left {
+			order: 2;
+			background: darkred;
+		}
+
+		.col-right {
+			order: 1;
+			background: blueviolet;
+		}
+	}
 }
 
-.image-section img {
-    width: 100%;
+.container {
+	padding: 2.5% 5%;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: white;
 }
 
-.text-section {
-    padding: 1rem;
-}
+.master-header {}
 
-footer {
-    background: rgba(252, 62, 158);
-    height: 100px;
+.titre {
+	text-align: center;
 }
