@@ -5,6 +5,7 @@
 	font-family: 'alien';
 	src: url("../source/we-are-alien/wearealien.ttf");
 }
+$primary-color: rgba(0,75,15);
 
 body {
 	background-image: url("../source/img/BG.jpg");
@@ -62,6 +63,16 @@ section {
 	}
 }
 
+.boutton:link {
+	color: black;
+	padding-left: 43%;
+}
+
+.boutton:visited {
+	color: $primary-color;
+	padding-left: 43%;
+}
+
 .container {
 	padding: 2.5% 5%;
 	margin-right: auto;
@@ -73,9 +84,19 @@ section {
 	padding: 1% 5%;
 	margin-right: auto;
 	margin-left: auto;
-	margin-bottom: 8rem;
-	height: 48rem;
+	margin-bottom: 5.1rem;
+	height: 45rem;
 	background-color: white;
+}
+
+.logo {
+	margin-left: 43%;
+	margin-bottom: 1.4rem;
+}
+
+.logoImg {
+	width: 13rem;
+	height: 13rem;
 }
 
 .master-header {}
@@ -83,4 +104,9 @@ section {
 .titre {
 	text-align: center;
 	font-size: 4rem;
+}
+
+::selection {
+	color: white;
+	background: $primary-color;
 }
