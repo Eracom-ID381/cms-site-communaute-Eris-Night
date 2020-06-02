@@ -23,14 +23,23 @@ h1 {
 	font-weight: bold;
 }
 
-img {}
+img {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	padding: 1% 3%;
+}
 
 section {
 	display: grid;
 
 	&.master-header {
 		grid-template-columns: 1fr 2fr;
-		padding: 2.5%;
+		padding: 1% 2.5%;
 
 		.col-left {}
 
@@ -41,11 +50,11 @@ section {
 		grid-template-columns: 1fr 1fr;
 
 		.col-left {
-			background: darkred;
+			// background: darkred;
 		}
 
 		.col-right {
-			background: blueviolet;
+			// background: blueviolet;
 		}
 	}
 
@@ -54,12 +63,12 @@ section {
 
 		.col-left {
 			order: 2;
-			background: darkred;
+			// background: darkred;
 		}
 
 		.col-right {
 			order: 1;
-			background: blueviolet;
+			// background: blueviolet;
 		}
 	}
 }
@@ -76,6 +85,10 @@ section {
 .boutton:visited {
 	color: $primary-color;
 	padding-left: 43%;
+}
+
+.deux {
+	padding-top: 50px;
 }
 
 .container {
