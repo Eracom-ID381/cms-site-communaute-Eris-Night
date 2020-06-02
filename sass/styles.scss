@@ -67,6 +67,10 @@ section {
 .boutton:link {
 	color: black;
 	padding-left: 43%;
+	transition-property: all;
+	transition-delay: 1s;
+	transition-duration: 2s;
+	transition-timing-function: ease-in-out;
 }
 
 .boutton:visited {
